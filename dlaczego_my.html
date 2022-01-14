@@ -1,0 +1,112 @@
+<html>
+    <body style="background-color:rgb(245, 245, 177)">
+
+        <style>
+            .flex-container {
+              display: flex;
+              align-content:space-between;
+          flex-direction: row;
+              flex-wrap: wrap;
+              justify-content:space-evenly;
+              height: 100%;
+              width: 100%;
+              background-color:rgb(245, 245, 177);
+              
+            }
+            
+            .flex-container > div {
+              background-color: #e7ad6b;
+              padding: 140px;
+              height: 300px;
+              width: 100px;
+            align-content:space-between;
+              
+            }
+
+           .styldodiv {
+
+            font-size: 16px;
+            padding-top: 1px;
+           text-align: left;
+           color: rgb(36, 90, 11);
+        
+
+           }
+
+            button{
+
+                text-align: right;
+                height: 33px;
+                width: 175px;
+                background-color:transparent;
+                color: rgb(0, 0, 0);
+
+            }
+
+        
+            </style>
+
+
+        <div  class="flex-container">
+
+<br>
+<br>
+
+            <h1 style="color:rgb(252, 0, 0);  font-size: 60px; text-align: center;" >Dlaczego wlasnie nasz kurs? </h1><br><br>
+
+       
+
+            <button style="text-align: right;" onclick='zmienkolor()'>Kliknij tu aby zmienic kolor tla</button>
+
+            <script style="text-align: right;">
+
+            button.onclick = zmienkolor;
+    
+            function zmienkolor() {
+                document.getElementsByTagName("DIV")[0].style.backgroundColor = "#fffe72";
+        }
+    
+                </script>
+
+                <br>
+                <br>
+                <br>
+
+            <button style="text-align: right;" onclick='WyswietlDate()'>Kliknij tutaj aby wyswietlic aktualny czas</button><br>
+            <br>
+            <br>
+
+            <p style="text-align: right; font-size: 14px;" id="czas">Tu pojawi sie czas</p>
+    
+            <script style="font-family: cursive; color: rgb(34, 34, 34); font-size: 15px; text-align: right;">
+    
+                function WyswietlDate() {
+                    document.getElementById("czas").innerHTML = Date();
+                
+                }
+            </script>
+
+      
+            
+            <br>
+            <br>
+
+           <div class="flex-container">
+
+            <p class="styldodiv">Jestesmy topowa firma w Europie.</p>  
+            <p class="styldodiv">Tylko w tym roku wyksztalcilismy 12346 programistow.</p>
+            <p class="styldodiv"> 93% absolwentow naszego kursu, dostalo prace maksymalnie 3 miesiace po ukonczeniu naszego kursu.</p>
+            </div>
+          
+            <div class="flex-container">
+            <p style="color:darkmagenta; text-align: center; font-family:initial; font-size: 34px; font-weight: bold; padding: 1px;" > "To najlepszy kurs programowania na europejskim rynku."</p>
+            <P style=" color: darkmagenta; font-style:oblique; text-align: center; font-size: 16px;">Marcin Krzak, Business Insider</P>
+            </div>
+
+        
+
+
+        </div>
+
+    </body>
+</html>
